@@ -10,7 +10,7 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
 
   <!--
     - custom css link
@@ -27,6 +27,19 @@
 
 <body>
 
+  <!-- 
+    -#PRELOADING
+  -->
+
+  <div class="loading" data-loading>
+    <img src="./assets/images/logo.png" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
+
+
+
+
+
   <!--
     - #MAIN
   -->
@@ -40,16 +53,18 @@
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
-
+        <img src="./assets/images/sun.png" id="icon">
         <figure class="avatar-box">
-          <img src="./assets/images/my.jpg" alt="Richard hanrick" width="80">
+          <img src="./assets/images/my-modified.png" alt="Bishoy Rafiq" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Bishoy Rafiq</h1>
+          <h1 class="name" title="Bishoy Rafiq">Bishoy Rafiq</h1>
 
           <p class="title">Web developer</p>
         </div>
+
+
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
@@ -174,14 +189,14 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>My Skills</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
-      
+
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -206,13 +221,15 @@
         </header>
 
         <section class="about-text">
-  
+
 
           <p>
             I'm Bishoy Rafiq, A Web Developer
-            I'm A Front-End Web Developer With A Strong Passion For Creating Visually Appealing And User-Friendly Web Applications. I Am Vary Passionate About Improving My Coding Skills &Developing & Websites.
-            
-            I Have Also Gained A Solid Foundation In Html, Css, And Bootstrap, And JavaScript. I Am Always Eager To Learn New Technologies And Techniques To Enhance My Skillset.
+            I'm A Front-End Web Developer With A Strong Passion For Creating Visually Appealing And User-Friendly Web
+            Applications. I Am Vary Passionate About Improving My Coding Skills &Developing & Websites.
+
+            I Have Also Gained A Solid Foundation In Html, Css, And Bootstrap, And JavaScript. I Am Always Eager To
+            Learn New Technologies And Techniques To Enhance My Skillset.
           </p>
         </section>
 
@@ -262,35 +279,6 @@
           </ul>
 
         </section>
-
-
-       
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-      
-
-
-          </section>
-
-        </div>
-
-
- 
-
       </article>
 
 
@@ -301,7 +289,7 @@
         - #My Skills
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="my skills" data-page="my skills">
 
         <header>
           <h2 class="h2 article-title">My Skills</h2>
@@ -389,6 +377,20 @@
 
             </li>
 
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React</h5>
+                <data value="99">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 99%;"></div>
+              </div>
+
+            </li>
+
           </ul>
 
         </section>
@@ -400,13 +402,13 @@
 
 
       <!--
-        - #PORTFOLIO
+        - #Projects
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="projects" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="projects">
@@ -639,7 +641,7 @@
 
 
 
-     
+
 
 
 
@@ -657,16 +659,18 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55215.650549186656!2d31.33475120148688!3d30.12343845273569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14586ab319984fb9%3A0x63bf8079d740f678!2z2LTYqNix2Kcg2KfZhNiu2YrZhdip2Iwg2KjZh9iq2YrZhdiMINmC2LPZhSDYq9in2YYg2LTYqNix2Kcg2KfZhNiu2YrZhdip2Iwg2YXYrdin2YHYuNipINin2YTZgtmE2YrZiNio2YrYqSA2MjIxMTAx!5e0!3m2!1sar!2seg!4v1721565599024!5m2!1sar!2seg" width="400" height="300" 
-             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure> 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55215.650549186656!2d31.33475120148688!3d30.12343845273569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14586ab319984fb9%3A0x63bf8079d740f678!2z2LTYqNix2Kcg2KfZhNiu2YrZhdip2Iwg2KjZh9iq2YrZhdiMINmC2LPZhSDYq9in2YYg2LTYqNix2Kcg2KfZhNiu2YrZhdip2Iwg2YXYrdin2YHYuNipINin2YTZgtmE2YrZiNio2YrYqSA2MjIxMTAx!5e0!3m2!1sar!2seg!4v1721565599024!5m2!1sar!2seg"
+              width="400" height="300" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
         </section>
 
         <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://formspree.io/f/xblrkpeg" method="POST" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -700,7 +704,7 @@
     - custom js link
 
   -->
- 
+
   <script src="./assets/js/script.js"></script>
 
   <!--
